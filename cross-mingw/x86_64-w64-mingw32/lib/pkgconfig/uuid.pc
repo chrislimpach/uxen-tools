@@ -1,0 +1,11 @@
+prefix=/c/uxen/xen/tools/install/cross-mingw
+exec_prefix=/c/uxen/xen/tools/install/cross-mingw/x86_64-w64-mingw32
+libdir=/c/uxen/xen/tools/install/cross-mingw/x86_64-w64-mingw32/lib
+includedir=${prefix}/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 1.42
+Requires: 
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -le2fsprogs-uuid
