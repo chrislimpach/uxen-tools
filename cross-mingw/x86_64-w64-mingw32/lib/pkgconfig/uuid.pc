@@ -1,0 +1,11 @@
+prefix=/home/local_slave/jenkins/workspace/DSL_uxentools_build_tools/xen/tools/install/cross-mingw
+exec_prefix=/home/local_slave/jenkins/workspace/DSL_uxentools_build_tools/xen/tools/install/cross-mingw/x86_64-w64-mingw32
+libdir=/home/local_slave/jenkins/workspace/DSL_uxentools_build_tools/xen/tools/install/cross-mingw/x86_64-w64-mingw32/lib
+includedir=${prefix}/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 1.42
+Requires: 
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -le2fsprogs-uuid
